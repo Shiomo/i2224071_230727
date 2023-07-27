@@ -1,0 +1,134 @@
+/* General Styles */
+
+*{
+    box-sizing: border-box;
+  }
+ #flexbox{
+   display:flex;
+   background:#ddd;
+   width: 100%;
+   height:auto;
+   padding:auto;
+ }
+ .box-item{
+   background:rgb(255, 255, 255);
+   text-align: center;
+   padding:15px 40px;
+   border:5px solid #ddd;
+ } 
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  /* Top Image Styles */
+  
+  #top img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  /* Navigation Styles */
+  
+  nav {
+    text-align: center;
+    background-color: #000000;
+    padding: 10px 0;
+  }
+  
+  #menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #menu li {
+    font-size: 20px;
+    display: inline;
+    margin-right: 70px;
+    color: #000000;
+    background-color: black;
+  }
+  
+  #menu li a {
+    text-decoration: none;
+    padding: 5px 10px;
+    color: #fffbfb;
+    border: 1px solid #000000;
+    border-radius: 5px;
+  }
+  
+  #menu li a:hover {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  /* Middle Content Styles */
+  
+  #container {
+    text-align: center;
+    padding: auto;
+  }
+  
+  #middle {
+    text-align: center;
+    width: auto;
+  }
+
+  
+  /* Bottom Content Styles */
+  
+  
+  #bottom {
+    color: #8b0000;
+    background: #ffffff;
+    padding: 20px;
+  }
+  
+  /* Media Queries for Responsive Design */
+  
+  @media screen and (max-width: 767px) {
+    /* Styles for smartphones and small screens */
+    #menu{
+      display: flex;
+      justify-content: center;
+    }
+
+    #menu li {
+      margin-right: 12px;
+      font-size: 15px;
+    }
+    #bottom {
+      font-size: 18px;
+    }
+  }
+
+  h2 {
+    text-align: center;
+    margin: 3rem auto 1rem;
+  }
+  
+  .tictok-block {
+    margin: 2rem auto;
+    max-width: 92%;
+  }
+  
+  /* ... Your other existing CSS styles ... */
+  
+  #contentA{
+    text-align: center;
+justify-content: center;
+    
+  }
+
+  .movies{
+    justify-content: space-between;
+  }

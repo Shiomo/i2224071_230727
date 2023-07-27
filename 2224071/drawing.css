@@ -1,0 +1,162 @@
+/* General Styles */
+
+*{
+  box-sizing: border-box;
+}
+#flexbox{
+ display:flex;
+ background:#ddd;
+ width: 100%;
+ height:auto;
+ padding:auto;
+}
+.box-item{
+ background:rgb(255, 255, 255);
+ text-align: center;
+ padding:15px 40px;
+ border:5px solid #ddd;
+} 
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1{
+  text-align: center;
+}
+
+
+
+/* Top Image Styles */
+
+#top img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Navigation Styles */
+
+nav {
+  text-align: center;
+  background-color: #000000;
+  padding: 10px 0;
+}
+
+#menu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#menu li {
+font-size: 20px;
+  display: inline;
+  margin-right: 70px;
+  color: #000000;
+  background-color: black;
+}
+
+#menu li a {
+  text-decoration: none;
+  padding: 5px 10px;
+  color: #fffbfb;
+  border: 1px solid #000000;
+  border-radius: 5px;
+}
+
+#menu li a:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Middle Content Styles */
+
+#container {
+  text-align: center;
+  padding: 20px;
+}
+
+#middle {
+  text-align: center;
+  width: 100%;
+}
+
+
+/* Bottom Content Styles */
+
+
+#bottom {
+  color: #8b0000;
+  background: #ffffff;
+  padding: 20px;
+}
+
+/* Media Queries for Responsive Design */
+
+
+
+.wrap{
+  margin-bottom: 1.5rem;
+}
+.design {
+  position: relative;
+  height: 0;
+  margin-bottom: 20px;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+}
+.design image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+.wrap img{
+  width: 60%;
+  height: auto;
+}
+
+.float-right{
+  font-size:80%;
+}
+
+ 
+
+/* ココから下がPC表示（600px以上）のレイアウト */
+@media screen and (min-width: 600px) {
+  .float-right{
+    float: right;
+    width: 49.5%;
+  }
+  .float-left{
+    float:left;
+    width: 49.5%;
+  }
+  .wrap:after{
+    display: block;
+    clear: both;
+    content: "";
+  }
+}
+
+
+@media screen and (max-width: 767px) {
+
+  #menu{
+    display: flex;
+    justify-content: center;
+  }
+
+  #menu li {
+    margin-right: 8px;
+    font-size: 10px;
+  }
+
+}
